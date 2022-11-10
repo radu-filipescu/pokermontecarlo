@@ -1,0 +1,16 @@
+::ng-deep * {
+  margin: 0;
+  padding: 0;
+}
+
+.app-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/images/table-texture.jpg");
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
