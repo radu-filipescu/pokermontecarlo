@@ -6,6 +6,12 @@
   height: 100vh;
 }
 
+.logo {
+  position: absolute;
+  left: calc(50% - 300px);
+  top: calc(50% - 100px);
+}
+
 .home-header {
   position: absolute;
   top: 10vh;

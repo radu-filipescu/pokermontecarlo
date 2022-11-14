@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="settings-header">Settings:
+    <div class="home-button" (click)="goHome()">
+      <img style="height: 30px" src="assets/images/home-icon.png">
+    </div>
+
+    <div class="close-button" (click)="closeModal()">
+      <img style="height: 30px" src="assets/images/close-icon.png">
+    </div>
+  </div>
+
+  <div class="settings-content">
+    <div class="depth" pTooltip="More simulations should yield a more precise approximation, but will impact performance">
+      <div style="font-family: Gotham; font-size: 22px; margin-bottom: 10px">How many simulations to run: {{simulationDepth}}</div>
+      <p-slider (onSlideEnd)="updateGlobal()" [(ngModel)]="simulationDepth" [min]="0" [max]="20000" [step]="2000"></p-slider>
+    </div>
+
+    <div class="depth">
+      <div style="font-family: Gotham; font-size: 22px; margin-bottom: 10px">Hold'em Poker Hands</div>
+
+      <img src="assets/images/pokerhands.jpg" style="height: 550px; border-radius: 6px">
+    </div>
+  </div>
+
+  <div class="about">
+    About:<br>
+    This project was made by Radu Filipescu as a demonstration of the Monte Carlo Simulation Method for the Simulation Techniques course.
+  </div>
+</div>

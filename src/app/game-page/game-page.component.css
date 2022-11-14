@@ -1,0 +1,151 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.player-zone {
+  position: absolute;
+  top: 49vh;
+  left: 3vw;
+  height: 46vh;
+  width: 36vw;
+  padding: 10px;
+}
+
+.player-header {
+  font-size: 26px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffbf17;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.player-card {
+  display: inline;
+  height: 80%;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.player-card > img {
+  height: 280px;
+}
+
+.action-button {
+  font-weight: bold;
+  font-family: Gotham;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  bottom: 4vh;
+  background: #ffbf17;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.action-button:hover {
+  color: #de0607;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.59);
+  box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.59);
+}
+
+.opponent-zone {
+  position: absolute;
+  top: 6vh;
+  left: 75vw;
+  height: 46vh;
+  width: 34vw;
+  padding: 10px;
+}
+
+.opponent-header {
+  font-size: 26px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffbf17;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.opponent-card {
+  display: inline;
+  height: 80%;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.opponent-card > img {
+  height: 210px;
+}
+
+.monte-carlo-zone {
+  position: absolute;
+  top: 6vh;
+  left: 4vw;
+  font-size: 42px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffbf17;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.board-zone {
+  position: absolute;
+  top: 57vh;
+  left: 38vw;
+  height: 28vh;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.board-card {
+  position: relative;
+  height: 180px;
+  width: 90px;
+  display: inline-block;
+  margin-right: 30px;
+  transform: skew(-45deg)
+}
+
+.board-card > img {
+  height: 125px;
+}
+
+.cardpack {
+  display: inline-block;
+}
+
+.cardpack > img {
+  height: 140px;
+}
+
+.settings-button {
+  position: absolute;
+  background: #ffbf17;
+  border-radius: 10px;
+  border: 2px solid #2c2c2c;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.settings-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.59);
+  box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.59);
+}
+
+.settings-zone {
+  position: absolute;
+  right: 0;
+  top: 2vh;
+  height: 96vh;
+  width: 40vw;
+}

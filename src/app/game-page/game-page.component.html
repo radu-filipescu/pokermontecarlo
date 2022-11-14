@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="player-zone">
+    <div class="player-header">Your cards:</div>
+
+    <div class="player-card">
+      <img src='{{"./assets/cards/" + playerCardOne + ".png"}}'>
+    </div>
+    <div class="player-card">
+      <img src='{{"./assets/cards/" + playerCardTwo + ".png"}}'>
+    </div>
+
+    <div class="action-button" (click)="doCurrentAction()">
+      {{currentAction}}
+    </div>
+  </div>
+
+  <div class="opponent-zone">
+    <div class="opponent-header">Your opponent's cards:</div>
+
+    <div class="opponent-card">
+      <img src='{{"./assets/cards/" + opponentCardOneDisplay + ".png"}}'>
+    </div>
+    <div class="opponent-card">
+      <img src='{{"./assets/cards/" + opponentCardTwoDisplay + ".png"}}'>
+    </div>
+  </div>
+
+  <div class="board-zone">
+    <div class="cardpack">
+      <img src="assets/images/card-pack.png">
+    </div>
+
+    <div *ngFor="let card of boardCards" class="board-card">
+        <img src='{{"./assets/cards/" + card + ".png"}}'>
+    </div>
+  </div>
+
+  <div class="monte-carlo-zone">
+    <div class="result">Your chance of winning is {{chanceOfWinning}}%.<br>
+      {{wonOrLost}}
+    </div>
+  </div>
+
+  <div class="settings-button" (click)="openSettingsModal()" pTooltip="settings">
+    <img style="height: 40px" src="assets/images/settings-icon.png">
+  </div>
+
+  <div class="settings-zone" *ngIf="settingsModalOpen">
+    <app-settings-modal (closeEvent)="closeSettingsModal()"></app-settings-modal>
+  </div>
+</div>
